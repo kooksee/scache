@@ -18,6 +18,7 @@ func RunCmd() {
 		DaemonCmd(),
 		VersionCmd(),
 		BootstrapCmd(),
+		NodeCmd(),
 	}
 
 	sort.Sort(cli.FlagsByName(app.Flags))

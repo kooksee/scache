@@ -14,9 +14,9 @@ func VersionCmd() cli.Command {
 		Usage:   "Show version info",
 		Flags:   []cli.Flag{},
 		Action: func(c *cli.Context) error {
-			fmt.Println("kfs version", version.Version)
-			fmt.Println("kfs commit version", version.GitCommit)
-			fmt.Println("kfs build version", version.BuildVersion)
+			fmt.Println("scache version", version.Version)
+			fmt.Println("scache commit version", version.GitCommit)
+			fmt.Println("scache build version", version.BuildVersion)
 			return nil
 		},
 	}
